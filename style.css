@@ -914,6 +914,14 @@ section h2 em {
     .footer {
         padding: 48px 24px;
     }
+    
+    .footer-logo {
+        height: 36px;
+    }
+
+    .site-footer-logo {
+        height: 36px;
+    }
 
     .quote-band {
         padding: 72px 24px;
