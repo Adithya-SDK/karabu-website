@@ -854,8 +854,9 @@ section h2 em {
     }
 
     .nav-logo img {
-        height: 36px;
+        height: 28px;
         width: auto;
+        max-width: 120px;
     }
 
     .nav-links {
@@ -909,6 +910,14 @@ section h2 em {
 
     .menu-grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        height: 32px;
+    }
+
+    .site-footer-logo {
+        height: 32px;
     }
 
     .footer {
