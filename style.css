@@ -1,4 +1,4 @@
-/* ─── CSS VARIABLES ─── */
+/* CSS VARIABLES */
 :root {
     --brown:      #6d5617;
     --brown-dark: #4a3a0e;
@@ -13,7 +13,7 @@
     --font-body:    'Raleway', sans-serif;
 }
 
-/* ─── RESET ─── */
+/* RESET */
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -38,9 +38,7 @@ img {
     object-fit: cover;
 }
 
-/* ─────────────────────────────────────────
-   NAVBAR
-───────────────────────────────────────── */
+/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
@@ -87,9 +85,7 @@ img {
     opacity: 0.6;
 }
 
-/* ─────────────────────────────────────────
-   HERO
-───────────────────────────────────────── */
+/* HERO */
 .hero {
     position: relative;
     width: 100%;
@@ -204,9 +200,7 @@ img {
     50%       { opacity: 1;   transform: scaleY(1.2); }
 }
 
-/* ─────────────────────────────────────────
-   SHARED SECTION STYLES
-───────────────────────────────────────── */
+/* SHARED SECTION STYLES */
 .section-label {
     font-family: var(--font-body);
     font-size: 10px;
@@ -238,9 +232,7 @@ section h2 em {
     letter-spacing: 0.5px;
 }
 
-/* ─────────────────────────────────────────
-   OUR STORY
-───────────────────────────────────────── */
+/* OUR STORY */
 .story {
     padding: 120px 56px;
     background-color: var(--cream);
@@ -332,9 +324,7 @@ section h2 em {
     font-style: italic;
 }
 
-/* ─────────────────────────────────────────
-   OUR CAFÉ
-───────────────────────────────────────── */
+/* OUR CAFÉ */
 .cafe-section {
     padding: 120px 56px;
     background-color: var(--sand-light);
@@ -348,9 +338,7 @@ section h2 em {
 
 
 
-/* ─────────────────────────────────────────
-   MENU — HOME PAGE (about + strip)
-───────────────────────────────────────── */
+/* MENU — HOME PAGE (about + strip) */
 .menu-about {
     background-color: var(--cream);
     padding: 120px 0 0;
@@ -442,9 +430,7 @@ section h2 em {
     100% { transform: translateX(-50%); }
 }
 
-/* ─────────────────────────────────────────
-   MENU PAGE (menu.html full grid)
-───────────────────────────────────────── */
+/* MENU PAGE (menu.html full grid) */
 .menu-section {
     padding: 120px 56px;
     background-color: var(--cream);
@@ -542,9 +528,7 @@ section h2 em {
     line-height: 1.6;
 }
 
-/* ─────────────────────────────────────────
-   QUOTE BAND
-───────────────────────────────────────── */
+/* QUOTE BAND */
 .quote-band {
     background-color: var(--brown);
     padding: 100px 56px;
@@ -566,9 +550,7 @@ section h2 em {
     color: var(--sand);
 }
 
-/* ─────────────────────────────────────────
-   CONTACT PAGE
-───────────────────────────────────────── */
+/* CONTACT PAGE */
 .contact-section {
     padding: 120px 56px;
     background-color: var(--sand-light);
@@ -671,9 +653,7 @@ section h2 em {
     height: 100%;
 }
 
-/* ─────────────────────────────────────────
-   FOOTER — inner pages (dark)
-───────────────────────────────────────── */
+/* FOOTER */
 .footer {
     background-color: var(--brown-dark);
     padding: 56px;
@@ -707,68 +687,6 @@ section h2 em {
     color: rgba(255,255,255,0.35);
 }
 
-/* ─────────────────────────────────────────
-   SITE FOOTER — home page only (dark, with details)
-───────────────────────────────────────── */
-.site-footer {
-    background-color: var(--brown-dark);
-    padding: 72px 56px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-}
-
-.site-footer-logo {
-    height: 40px;
-    width: auto;
-    max-width: 160px;
-    object-fit: contain;
-    opacity: 0.85;
-    filter: brightness(0) invert(1);
-}
-
-.site-footer-divider {
-    width: 40px;
-    height: 1px;
-    background-color: rgba(255,255,255,0.25);
-}
-
-.site-footer-details {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.45);
-    font-weight: 300;
-}
-
-.site-footer-details a {
-    color: rgba(255,255,255,0.45);
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.site-footer-details a:hover {
-    color: rgba(255,255,255,0.85);
-}
-
-.findus-dot {
-    color: rgba(255,255,255,0.25);
-}
-
-.site-footer-copy {
-    font-size: 11px;
-    letter-spacing: 1.5px;
-    color: rgba(255,255,255,0.3);
-    font-weight: 300;
-}
-
 @media (max-width: 768px) {
     .site-footer {
         padding: 64px 24px;
@@ -783,9 +701,8 @@ section h2 em {
     }
 }
 
-/* ─────────────────────────────────────────
-   RESPONSIVE — TABLET
-───────────────────────────────────────── */
+
+/* RESPONSIVE — TABLET */
 @media (max-width: 1024px) {
     .menu-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -802,9 +719,7 @@ section h2 em {
     }
 }
 
-/* ─────────────────────────────────────────
-   CSS-ONLY HAMBURGER MENU
-───────────────────────────────────────── */
+/* HAMBURGER MENU */
 .nav-toggle {
     display: none;
 }
@@ -842,9 +757,7 @@ section h2 em {
     display: flex;
 }
 
-/* ─────────────────────────────────────────
-   RESPONSIVE — MOBILE
-───────────────────────────────────────── */
+/* RESPONSIVE — MOBILE */
 @media (max-width: 768px) {
     .navbar {
         padding: 14px 24px;
@@ -958,25 +871,22 @@ section h2 em {
 }
 
 
-/* ══════════════════════════════════════════
-   PAGE-SPECIFIC STYLES
-   (story.html, cafe.html, menu.html, contact.html)
-══════════════════════════════════════════ */
+/* PAGE-SPECIFIC STYLES */
 
-/* ─── Active nav link ─── */
+/* Active nav link */
 .nav-links a.active {
     opacity: 0.5;
     border-bottom: 1px solid rgba(255,255,255,0.6);
     padding-bottom: 2px;
 }
 
-/* ─── Logo link reset ─── */
+/* Logo link reset */
 .nav-logo a {
     display: inline-block;
     line-height: 0;
 }
 
-/* ─── PAGE HERO (used on all inner pages) ─── */
+/* PAGE HERO (used on all inner pages) */
 .page-hero {
     position: relative;
     width: 100%;
@@ -1058,9 +968,7 @@ section h2 em {
     line-height: 1.1;
 }
 
-/* ─────────────────────────────────────────
-   STORY PAGE
-───────────────────────────────────────── */
+/* STORY PAGE */
 .story-page {
     padding: 100px 56px;
     background-color: var(--cream);
@@ -1218,9 +1126,7 @@ section h2 em {
     font-weight: 500;
 }
 
-/* ─────────────────────────────────────────
-   CAFÉ PAGE
-───────────────────────────────────────── */
+/* CAFÉ PAGE */
 .cafe-intro {
     padding: 100px 56px 64px;
     background-color: var(--cream);
@@ -1283,9 +1189,7 @@ section h2 em {
     transform: scale(1.06);
 }
 
-/* ─────────────────────────────────────────
-   MENU PAGE
-───────────────────────────────────────── */
+/* MENU PAGE */
 .menu-page {
     max-width: 1300px;
     margin: 0 auto;
@@ -1302,9 +1206,7 @@ section h2 em {
     border-bottom: 1px solid var(--sand);
 }
 
-/* ─────────────────────────────────────────
-   CONTACT PAGE
-───────────────────────────────────────── */
+/* CONTACT PAGE */
 .contact-page {
     background-color: var(--cream);
 }
@@ -1399,9 +1301,8 @@ section h2 em {
     background-color: var(--brown-dark);
 }
 
-/* ─────────────────────────────────────────
-   RESPONSIVE — INNER PAGES
-───────────────────────────────────────── */
+/* RESPONSIVE — INNER PAGES */
+
 @media (max-width: 1024px) {
     .values-grid,
     .team-grid {
@@ -1474,9 +1375,7 @@ section h2 em {
 }
 
 
-/* ─────────────────────────────────────────
-   WHY CHOOSE US — homepage replacement
-───────────────────────────────────────── */
+/* WHY CHOOSE US */
 .why-section {
     display: flex;
     align-items: center;
@@ -1598,9 +1497,7 @@ section h2 em {
 }
 
 
-/* ─────────────────────────────────────────
-   WARM FEATURES BLOCK — cafe.html (cards)
-───────────────────────────────────────── */
+/* WARM FEATURES BLOCK — cafe.html */
 .warm-features {
     background-color: var(--cream);
     padding: 100px 56px;
